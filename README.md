@@ -3,7 +3,9 @@
 ## Install 
 
 ```
-npm i browser-sync del gulp-autoprefixer gulp-concat gulp-htmlclean gulp-imagemin gulp-jshint gulp-newer gulp-ng-annotate gulp-notify gulp-preprocess gulp-rename gulp-sass gulp-size gulp-sourcemaps gulp-strip-debug gulp-uglify gulp-uncss jshint -D
+npm i
+gulp or npm run dev
+// http://localhost:3000
 ```
 
 Modular gulp build each task in it's own fles, Modular Angular App
@@ -19,23 +21,6 @@ Modular gulp build each task in it's own fles, Modular Angular App
 - code versioning
 - Angular JS code annotation
 
-## Setup
-
-```
-// Install dev dependencies
-npm i browser-sync del gulp-sourcemaps gulp-newer gulp-jshint gulp-uglify gulp-concat gulp-strip-debug gulp-ng-annotate gulp-notify gulp-size gulp-sass gulp-uncss gulp-rename gulp-preprocess gulp-htmlclean gulp-newer gulp-imagemin gulp-autoprefixer -D
-
-// Install prod dependencies
-npm i bootstrap
-```
-
-
-## Run Application
-
-```
-gulp or npm run dev
-// http://localhost:3000
-```
 
 ## How to use
 
@@ -54,8 +39,8 @@ npm run build ( production )
 ## Run generator
 
 ```
-npm run apt -- --name mydemo
-gulp apt --name mydemo
+npm run c --name mydemo
+gulp component --name mydemo
 ```
 
 
