@@ -1,0 +1,64 @@
+<div class="dm-col">
+    <div class="sub-header">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>Create document</h1>
+            </div>
+            <div class="col-sm-5">
+                <div class="float-xs-right sub-btn-group">
+                    <button class="btn" ng-click="gridactionvm.onSaveClick()">
+                        <span class="icon-svg icon-save"></span>
+                    </button>
+                    <button class="btn">
+                        <span class="icon-svg icon-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scope-content content-h-100" ng-scrollbars ng-scrollbars-config="appvm.scrollbarConfig">
+        <div class="row">
+            <div class="col-sm-2 mt-4">
+                <div class="form-group">
+                    <input type="text" value="1.01" required>
+                    <label class="control-label">Index</label>
+                    <i class="bar"></i>
+                </div>
+            </div>
+            <div class="col-sm-10 mt-4">
+                <div class="form-group">
+                    <input type="text" value="Scope Questionnaire" required>
+                    <label class="control-label">Title</label>
+                    <i class="bar"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-group mt-4">
+            <input type="text" value="My first word document.docx" required>
+            <label class="control-label">Original title</label>
+            <i class="bar"></i>
+        </div>
+        <div class="document-btn-group">
+            <button class="btn">Browse</button>
+        </div>
+        <div class="form-group mt-4">
+            <select kendo-multi-select 
+                    k-options="newDocVm.selectOptions" 
+                    k-ng-model="newDocVm.selectedOptions"
+                    required>
+            </select>
+            <label class="control-label">Scopings rules, will be included for this scope</label>
+            <i class="bar"></i>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value=""> Is not in use in the scope selected
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value=""> Mandatory
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="sub-header" ng-init="appvm.sideMenuCollapse=true">
+    <div class="row">
+        <div class="col-xs-6">
+            <h1>Fsas</h1>
+            <small>small test</small>
+        </div>
+        <div class="col-xs-6">
+            <grid-action-group save="fsavm.save()" add-row="fsavm.addRow()" is-btn-disabled="fsavm.isBtnDisabled"></grid-action-group>
+        </div>
+    </div>
+</div>
+<kendo-grid options="fsavm.mainGridOptions"></kendo-grid>

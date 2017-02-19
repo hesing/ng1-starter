@@ -1,0 +1,23 @@
+
+<h1>Hello Boss</h1>
+<div class="bdoContextMenu open" click-out="contextmenuvm.selectedRowIndex = -1;contextmenuvm.confirmRemovePopover=false">
+    <a href="" class="icon-grid icon-svg icon-dots px-0 py-0" ng-click="contextmenuvm.toggleContextMenu(contextmenuvm.rowData.$id)"></a>
+
+    <div class="popover popover-bottom animated" ng-class="{'slideInUp': contextmenuvm.selectedRowIndex == contextmenuvm.rowData.$id}">
+        <ul class="list-unstyled">
+            <li ng-click="contextmenuvm.selectAllScopings(contextmenuvm.rowData)">Select All Industries</li>
+            <li ng-click="contextmenuvm.addNewItem(contextmenuvm.rowData)">New FSA</li>
+            <li ng-click="contextmenuvm.confirmRemovePopover=true; contextmenuvm.selectedRowIndex = -1">Delete FSA</li>
+        </ul>
+    </div>
+<!--     <div ng-if="contextmenuvm.confirmRemovePopover" class="popover popover-bottom popover-remove text-xs-center animated" ng-class="{'slideInUp': contextmenuvm.confirmRemovePopover}">
+        <div class="card-block">
+            <p>
+                {{contextmenuvm.deleteConfirmMessage}}
+            </p>
+
+            <button class="btn btn-default" ng-click="contextmenuvm.confirmRemovePopover=false;contextmenuvm.toggleContextMenu(-1)">Cancel</button>
+            <button class="btn btn-danger" ng-click="contextmenuvm.deleteRow(contextmenuvm.rowData); contextmenuvm.confirmRemovePopover=false;contextmenuvm.toggleContextMenu(-1)">Delete</button>
+        </div>
+    </div> -->
+</div>

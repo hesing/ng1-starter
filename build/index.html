@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" media="all" href="css/main.css" />
+    <link id="appStyles" />
+    
+    
+    
+    <title>Document</title>
+</head>
+
+<body ng-controller="AppCtrl as appvm">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+        <a class="navbar-brand" href="#" ng-click="toggleSideMenu=!toggleSideMenu">Navbar <i class="ti-menu toggle-nav"></i></a>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" ui-sref-active="active">
+                    <a class="nav-link" ui-sref="home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" ui-sref-active="active">
+                    <a class="nav-link" ui-sref="about">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <aside class="sidebar" ng-class="{'toggled': toggleSideMenu}">
+            <div class="sidebar-inner" ng-scrollbars ng-scrollbars-config="appvm.scrollbarConfig">
+                <ul class="menu">
+                    <li ui-sref-active="active">
+                        <a ui-sref="home">Home</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="about">About</a>
+                    </li>
+                    <li>
+                        <a href=''>Contact</a>
+                    </li>
+                    <li class="sub-menu" ng-class="{toggled: toggleSubMenu}">
+                        <a href="" ng-click="toggleSubMenu=!toggleSubMenu">
+                            <i class="ti-angle-right menu-arrow"></i> Headers
+                        </a>
+                        <ul class="animated">
+                            <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.textual-menu" data-ui-sref-active="active" class="active" href="#/headers/textual-menu">Textual menu</a></li>
+                            <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.image-logo" data-ui-sref-active="active" href="#/headers/image-logo">Image logo</a></li>
+                            <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.mainmenu-on-top" data-ui-sref-active="active" href="#/headers/mainmenu-on-top">Mainmenu on top</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content">
+            <!-- Page content goes here -->
+            <div class="container-fluid" ng-scrollbars ng-scrollbars-config="appvm.scrollbarConfigContent">
+                <ui-view></ui-view>
+            </div>
+    
+            <footer class="footer">
+                <div class="container-fluid">
+                    <p>Copyright &copy; 2017</p>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+    	<script src="vendor/jquery.min.js"></script>
+    	<script src="vendor/angular.js"></script>
+    	<script src="vendor/angular-ui-router.js"></script>
+    	<script src="vendor/angular-animate.js"></script>
+    	<script src="vendor/ocLazyLoad.js"></script>
+        <script src="vendor/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendor/scrollbar/scrollbars.js"></script>
+            
+        <script src="app/js/app.js"></script>
+    	<script src="app/js/app-config.js" id="appScripts"></script>
+    	<script src="app/js/app.controller.js"></script>
+    
+    	<!-- common modules -->
+        <script src="app/common/alert/alert-directive.js"></script>
+        <script src="app/common/alert/alert-service.js"></script>
+        <script src="app/common/ErrorCatcher/ErrorCatcher.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- @include templates/_meta.html -->
+    <title>Document</title>
+</head>
+
+<body ng-controller="AppCtrl as appvm">
+    <!-- @include templates/_header.html -->
+    <div id="wrapper">
+        <!-- @include templates/_sidebar.html -->
+
+        <div class="content">
+            <!-- Page content goes here -->
+            <div class="container-fluid" ng-scrollbars ng-scrollbars-config="appvm.scrollbarConfigContent">
+                <ui-view></ui-view>
+            </div>
+    
+            <!-- @include templates/_footer.html -->
+        </div>
+    </div>
+    <!-- @include templates/_scripts.html -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/icons/icon-file-img</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-70.000000, -68.000000)">
+            <g id="assets/icons/icon-file-img" transform="translate(70.000000, 68.000000)">
+                <g id="Icons-/-Generic-/-IMG:active">
+                    <g id=".icon-PDF:active" stroke-width="1" fill="#FEC404">
+                        <rect id="Combined-Shape" x="0" y="0" width="10" height="14" rx="2"></rect>
+                    </g>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="3.5" cy="3.5" r="1.5"></circle>
+                    <path d="M1.99791312,13 C0.894496173,13 0.536339879,12.2848802 1.2029289,11.3960948 L3,9 L6,13 L1.99791312,13 Z" id="Path-2" fill="#FFFFFF"></path>
+                    <path d="M4,11.0393709 L6.74417935,7 L8.98957228,9.13692434 L8.99460288,10.9991736 C8.99758363,12.1026021 8.1061002,12.9971077 6.9951185,12.9971077 L4,12.9971077 L4,11.0393709 Z" id="Path-3" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
